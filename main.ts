@@ -1,4 +1,19 @@
 input.onButtonPressed(Button.A, function () {
+    mojisu = 0
+    mojiretu = "リナサンノスキナタヘ゛モノハナンテ゛スカ？"
+    mojisu = mojiretu.length
+    KataKana()
+})
+input.onButtonPressed(Button.AB, function () {
+    mojisu = 0
+    mojiretu = "キョウハホイクエンテ゛ナニヲシマシタカ？"
+    mojisu = mojiretu.length
+    KataKana()
+})
+input.onButtonPressed(Button.B, function () {
+    mojisu = 0
+    mojiretu = "キョウノユウハンハナンテ゛スカ？"
+    mojisu = mojiretu.length
     KataKana()
 })
 function KataKana () {
@@ -374,17 +389,17 @@ function KataKana () {
                 `)
         } else if ("゛".compare(mojiretu.charAt(mojiichi)) == 0) {
             basic.showLeds(`
-                . # . # .
-                . # . # .
-                . # . # .
+                # . # . .
+                # . # . .
+                # . # . .
                 . . . . .
                 . . . . .
                 `)
         } else if ("゜".compare(mojiretu.charAt(mojiichi)) == 0) {
             basic.showLeds(`
-                . # # # .
-                . # . # .
-                . # # # .
+                # # # . .
+                # . # . .
+                # # # . .
                 . . . . .
                 . . . . .
                 `)
@@ -417,7 +432,7 @@ function KataKana () {
                 . # # # .
                 # . . . #
                 . . # # .
-                . . # . .
+                . . . . .
                 . . # . .
                 `)
         } else if ("、".compare(mojiretu.charAt(mojiichi)) == 0) {
@@ -484,6 +499,30 @@ function KataKana () {
                 . . . . .
                 # # # # #
                 `)
+        } else if ("ャ".compare(mojiretu.charAt(mojiichi)) == 0) {
+            basic.showLeds(`
+                . . . . .
+                . # . . .
+                # # # # .
+                . # # . .
+                . # . . .
+                `)
+        } else if ("ュ".compare(mojiretu.charAt(mojiichi)) == 0) {
+            basic.showLeds(`
+                . . . . .
+                . . . . .
+                # # # . .
+                . . # . .
+                # # # # .
+                `)
+        } else if ("ョ".compare(mojiretu.charAt(mojiichi)) == 0) {
+            basic.showLeds(`
+                . . . . .
+                # # # . .
+                # # # . .
+                . . # . .
+                # # # . .
+                `)
         } else {
             basic.showIcon(IconNames.No)
         }
@@ -494,5 +533,6 @@ let mojiichi = 0
 let mojiretu = ""
 let mojisu = 0
 mojisu = 0
-mojiretu = "ワオン"
+mojiretu = "コンニチハマスタ゛リナサン　オケ゛ンキテ゛スカ？"
 mojisu = mojiretu.length
+KataKana()
