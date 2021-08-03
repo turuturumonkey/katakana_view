@@ -523,6 +523,126 @@ function KataKana () {
                 . . # . .
                 # # # . .
                 `)
+        } else if ("ガ".compare(mojiretu.charAt(mojiichi)) == 0) {
+            basic.showLeds(`
+                . # . # #
+                # # # # .
+                . # . # .
+                . # . # .
+                # . . # .
+                `)
+        } else if ("ギ".compare(mojiretu.charAt(mojiichi)) == 0) {
+            basic.showLeds(`
+                . # . # #
+                # # # # .
+                . # . . .
+                # # # # .
+                . # . . .
+                `)
+        } else if ("グ".compare(mojiretu.charAt(mojiichi)) == 0) {
+            basic.showLeds(`
+                . # . # #
+                . # # # .
+                # . . # .
+                . . # . .
+                . # . . .
+                `)
+        } else if ("グ".compare(mojiretu.charAt(mojiichi)) == 0) {
+            basic.showLeds(`
+                . # . # #
+                . # # # #
+                # . . # .
+                . . . # .
+                . # # . .
+                `)
+        } else if ("ゴ".compare(mojiretu.charAt(mojiichi)) == 0) {
+            basic.showLeds(`
+                . . . # #
+                # # # # .
+                . . . # .
+                . . . # .
+                # # # # .
+                `)
+        } else if ("ザ".compare(mojiretu.charAt(mojiichi)) == 0) {
+            basic.showLeds(`
+                . . . # #
+                . # . # .
+                # # # # #
+                . # . # .
+                . . # # .
+                `)
+        } else if ("ジ".compare(mojiretu.charAt(mojiichi)) == 0) {
+            basic.showLeds(`
+                # # . # #
+                . . . . .
+                # # . # .
+                . . # . .
+                # # . . .
+                `)
+        } else if (false) {
+            basic.showLeds(`
+                . . . # #
+                # # # # .
+                . . . # .
+                . . # . .
+                # # . # .
+                `)
+        } else if (false) {
+            basic.showLeds(`
+                . # . # #
+                # # # # .
+                . # . # .
+                . # . . .
+                . # # # .
+                `)
+        } else if (false) {
+            basic.showLeds(`
+                . . . # #
+                # . . . .
+                . # . # .
+                . . . # .
+                . # # . .
+                `)
+        } else if (false) {
+            basic.showLeds(`
+                . # . # #
+                . # # # .
+                # # . # .
+                . # # # .
+                # # # . .
+                `)
+        } else if (false) {
+            basic.showLeds(`
+                # # # # #
+                . . # . #
+                # # # # .
+                . . # . .
+                # # # . .
+                `)
+        } else if (false) {
+            basic.showLeds(`
+                . . . # #
+                # # . # .
+                # # . # .
+                . . . # .
+                . # # . .
+                `)
+        } else if (false) {
+            basic.showLeds(`
+                # # # . #
+                . . . . #
+                # # # # .
+                . . # . .
+                # # # . .
+                `)
+        } else if (false) {
+            basic.showLeds(`
+                # . . # #
+                # . . . .
+                # # # # .
+                # . . . .
+                # . . . .
+                `)
         } else {
             basic.showIcon(IconNames.No)
         }
